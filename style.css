@@ -1,8 +1,5 @@
-/* Header Section */
-    .header{
-        display: flex;
-        justify-content: space-around;
-    }
+        /* Header Section */
+
     .header-items > ul > li{
         list-style: none;
     }
@@ -15,16 +12,25 @@
 /* banner Section */
 .banner{
     display: flex;
-    margin: 10px 20px 10px 20px;
-    padding: 30px 70px 30px 70px;
+    justify-content: space-evenly;
+
 }
 .banner-info{
     align-content: center;
 }
+.banner-title-color-change{
+    color: rgba(233, 90, 8, 1);
+}
+.banner-info-color-change{
+    color: rgba(0, 0, 0, 0.5);
+}
 /* Plant Section */
+
 .plant-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
 }
 .btn{
     color: rgba(255, 255, 255, 1);
@@ -41,6 +47,13 @@
 }
 .flower-store{
     width: 90%;
+}
+.plants-lover-title{
+    font-size: 3em;
+}
+.plants-lover-info{
+    justify-items: center;
+    align-content: center;
 }
 
 /* Latest Deal Section */
@@ -100,4 +113,7 @@
 }
 .footer-icons{
     padding-right: 10px;
+}
+.footer-icon{
+    
 }
