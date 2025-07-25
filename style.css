@@ -23,6 +23,7 @@
 }
 .banner-info{
     align-content: center;
+    
 }
 .banner-title-color-change{
     color: rgba(233, 90, 8, 1);
@@ -48,14 +49,18 @@
 /* Plants Lover Section */
 .plants-lover{
     display: flex;
-
+    justify-content: space-between;
+}
+.plants-left{
+    position: relative;
+    
 }
 .trusted-badge{
     position: absolute;
     height: 250px;
     width: 250px;
-    left: 320px;
-    top: 1720px;
+    right: -133px;
+    top: -130px;
 }
 .plants-lover-title{
     font-size: 3em;
@@ -73,13 +78,10 @@
 .latest-deal{
     display: flex;
 }
-.two-container{
-    
-}
+
 .deal-1{
     background-image: url(images/deal-ana.png);
     background-size: cover;
-    border: 1px solid;
     height: 150px;
     width: 400px;
     background-repeat: no-repeat;
@@ -89,8 +91,7 @@
 }
 .deal-2{
     background-image: url(images/deal-bloom.png);
-    background-size: cover;
-    border: 1px solid;
+    background-size: cover; 
     height: 150px;
     width: 400px;
     background-repeat: no-repeat;
@@ -99,11 +100,12 @@
 .deal-3{
     background-image: url(images/deal-zabo.png);
     background-size: cover;
-    border: 1px solid;
     height: 315px;
     width: 700px;
     background-repeat: no-repeat;
     border-radius: 15px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     
 }
 .deal-title{
@@ -123,9 +125,11 @@
 }
 .join-title{
     color: rgba(255, 255, 255, 1);
+    font-size: 48px;
 }
 .join-input{
-    padding: 7px 15px 7px 15px;
+    padding: 7px 150px 7px 150px;
+
 }
 .btn-2{
     color: rgba(255, 255, 255, 1);
@@ -164,25 +168,80 @@
 @media screen and (max-width: 576px) {
     .header-section{
         flex-direction: row;
+        align-items: center;
     }    
-    .head-list-1 .head-list-2 .head-list-3{
-        display: hidden;
+    .head-list-1, .head-list-2, .head-list-3{
+        display: none;
     } 
+    .head-list-4{
+        font-size: larger;
+    }
     .banner{
         flex-direction: column;
+    }
+    .banner-info{
+        justify-items: center;
+    }
+    .banner-image{
+        justify-content: center;
+        padding-top: 40px;
     }
     .plant-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .plant-info{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .trusted-badge{
+        display: none;
+    }
+    .plants-lover{
+        flex-direction: column;
+        padding: 10px 15px 40px 15px;
+        
+    }
+    .plants-lover-title{
+        font-size: 1.7em;
+        padding-top: 10px;
+    }
+
     .latest-deal{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .join{
-        width: 100%;
+    .latest-deal-info{
+         padding-right: 30px;
+        padding-left: 30px;
     }
+    .deal-3{
+        height: 150px;
+        width: 400px;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    .join-title{
+    font-size: 2rem;
+   }
+   .join-input{
+    padding: 7px 40px 7px 40px;
+    
+}
+   
     .footer{
         flex-direction: column;
+        margin-left: 50px;
+    }
+    .footer-items{
+        flex-direction: column;
+    }
+    .footer-list{
+        padding-top: 30px;
+    }
+    .footer-icons{
+        padding-top: 30px;
     }
 }
